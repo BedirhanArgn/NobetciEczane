@@ -1,0 +1,13 @@
+<div *ngIf="loading" class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+
+<div [hidden]="loading" *ngFor="let item of eczanelist">
+        <div class="card">   
+    <h3>{{item.eczaneAdi}}</h3>
+    <img src="https://ecza.io/eczane-no-image.jpg">
+    <p><strong>Adres:</strong>{{item.eczaneAdresi}}</p>
+    <p><strong>Telefon:</strong> {{item.eczaneTel}}</p>
+
+    </div>
+</div>
