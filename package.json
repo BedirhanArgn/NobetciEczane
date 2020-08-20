@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node src/server.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "engines": {
     "node": "~14.4.0",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.6",
+  
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
