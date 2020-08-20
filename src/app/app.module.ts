@@ -7,14 +7,12 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { TurkeymapComponent } from './turkeymap/turkeymap.component';
 import { TurkeymapdetailsComponent } from './turkeymapdetails/turkeymapdetails.component';
-import { SnipperComponent } from './snipper/snipper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TurkeymapComponent,
     TurkeymapdetailsComponent,
-    SnipperComponent,
   ],
   imports: [
     BrowserModule,

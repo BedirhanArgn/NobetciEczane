@@ -26,7 +26,7 @@ export class TurkeymapdetailsComponent implements OnInit {
   }
 
   getData(id:string) {
-    const link="http://localhost:3000/"+id;
+    const link="https://protected-beach-03657.herokuapp.com/"+id;
     this.api.getDatafromApi(link).subscribe(eczane=>{
       this.loading=false;
       this.eczanelist=eczane
