@@ -2,9 +2,9 @@
   "name": "angulareczane",
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "ng build --aot --prod",
     "ng": "ng",
-    "start": "node src/server.js",
+    "start": "node server.js",
+    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
